@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+input[type="text"], button {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.button {
+    padding: 12px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    width: 90%;
+}
+
+.button.paste {
+    background-color: #6c757d;
+}
+
+.button.copy {
+    background-color: #28a745;
+}
+
+.button.download {
+    background-color: #007bff;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    input[type="text"], button {
+        padding: 10px;
+    }
+    .button-group {
+        gap: 8px;
+    }
+    button {
+        font-size: 0.9em;
+    }
+}
+
+/* Custom styles for SweetAlert to center the OK button */
+.swal-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swal-button {
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

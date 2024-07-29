@@ -1,0 +1,13 @@
+/* Custom styles for SweetAlert to center the OK button */
+.swal-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swal-button {
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
