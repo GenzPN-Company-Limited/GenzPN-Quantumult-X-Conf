@@ -1,0 +1,1 @@
+# GenzPN-Quantumult-X-Conf
